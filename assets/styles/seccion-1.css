@@ -1,0 +1,130 @@
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../images/bg-banner.webp);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 40px;
+}
+
+.peoples {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-image: url(../images/people-banner.webp);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+    background-position-x: 50%;
+    width: 1150px;
+    height: 850px;
+}
+
+.logo-banner {
+    margin-top: 145px;
+}
+
+.titulo-banner {
+    font-family: "poppins-semibold";
+    font-size: 26px;
+    text-transform: uppercase;
+    background-image: url(../images/bg-tittle-banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 20px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 0px 2px #0000006e;
+}
+
+.border-btn-banner {
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100px;
+    padding: 5px;
+    margin-top: 280px;
+    cursor: pointer;
+}
+
+/* Seccion-1 RESPONSIVE */
+/* 900px */
+@media screen and (max-width: 900px) {
+    .seccion-1 {
+        height: 900px;
+        background-size: cover;
+    }
+
+    .logo-banner {
+        margin-top: 120px;
+        height: 150px;
+    }
+
+    .peoples {
+        height: 650px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .border-btn-banner {
+        margin-top: 200px;
+    }
+}
+
+/* 720px */
+@media screen and (max-width: 720px) {
+    .seccion-1 {
+        height: 600px;
+        background-size: cover;
+    }
+
+    .logo-banner {
+        margin-top: 100px;
+        height: 100px;
+    }
+
+    .titulo-banner {
+        font-size: 20px;
+    }
+
+    .peoples {
+        height: 480px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .border-btn-banner {
+        margin-top: 100px;
+    }
+
+
+}
+
+/* 360px */
+@media screen and (max-width: 360px) {
+    .seccion-1 {
+        height: 500px;
+        background-size: cover;
+    }
+
+    .logo-banner {
+        margin-top: 60px;
+        height: 100px;
+    }
+
+    .titulo-banner {
+        font-size: 18px;
+    }
+
+    .peoples {
+        height: 390px;
+        background-size: 110%;
+        background-position: center;
+    }
+
+    .border-btn-banner {
+        margin-top: 100px;
+    }
+}

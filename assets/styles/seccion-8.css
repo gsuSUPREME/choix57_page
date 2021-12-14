@@ -1,0 +1,208 @@
+.seccion-8 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../images/bg-seccion-8.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+ }
+
+ .contenedor-8{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0px 30px 0px;
+ }
+
+ .contenedor-8 .footer-info{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     margin-bottom: 50px;
+ }
+
+ .contenedor-8 .col-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contenedor-8 .footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .contenedor-8 .footer-info .col-footer-small {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ }
+ .contenedor-8 .col-form {width: 540px;}
+
+/* Columna Choix */
+ .col-choix p {
+     line-height: 1.9;
+     margin-bottom: 80px;
+ }
+
+ .col-choix .btn-regular {
+    font-size: 22px;
+ }
+
+ /* Columna Info */
+ .col-info .info-item {
+    margin-bottom: 20px;
+ }
+
+ .col-info h3 {
+     font-size: 30px;
+     margin-bottom: 20px;
+ }
+
+ .col-info h4 {
+     font-size: 20px;
+     margin: 0px;
+ }
+
+ .col-info p {
+     margin: 0px;
+ }
+
+ .col-info .titl-info {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 5px;
+ }
+
+ .titl-info img {
+     margin-right: 10px;
+ }
+
+ .social-icons {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: flex-start;
+     width: 170px;
+     margin-top: 10px;
+ }
+
+ /* Columna Formulario */
+.form-footer {
+    display: inline-block;
+}
+
+.col-form form { width: 100%;}
+
+.form-field {
+    width: 92%;
+    color: white;
+    font-size: 14px;
+    font-family: "poppins";
+    padding: 20px;
+    border-width: 0px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, rgba(114,47,177,1) 0%, rgba(41,10,77,1) 100%);
+}
+
+.col-form input {height: 40px;}
+.col-form textarea {height: 110px;}
+
+.form-field::placeholder {
+    color: white;
+    font-size: 14px;
+    font-family: "poppins";
+}
+
+.col-form .btn-regular {
+    font-size: 22px;
+    width: 120px;
+    border-style: none;
+}
+
+/* Certificados */
+.certificados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+/* Menu Footer */
+.menu-footer {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+.menu-footer li a {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    transition: 0.6s;
+}
+
+.menu-footer li a:hover {
+    color: #FFD401;
+}
+
+.menu-footer li {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Seccion-8 RESPONSIVE */
+/* COLUMNS INFO 1150px */
+@media screen and (max-width: 1150px) {
+    .contenedor-8 .footer-info {
+        width: 90%;
+        padding: 0px 20px;
+    }
+}
+
+/* COLUMNS INFO 720px */
+@media screen and (max-width: 720px) {
+
+    .contenedor-8 .footer-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+        width: 90%;
+        padding: 0px 20px;
+    }
+    .contenedor-8 .footer-info .col-footer-small {width: 45%;}
+    .contenedor-8 .col-form {width: 100%;}
+}
+
+/* COLUMNS INFO 480px */
+@media screen and (max-width: 480px) {
+
+    .contenedor-8 .footer-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+        /* width: 90%; */
+        padding: 0px 20px;
+    }
+    .contenedor-8 .footer-info .col-footer-small {width: 100%;}
+    .contenedor-8 .col-form {width: 95%;}
+}

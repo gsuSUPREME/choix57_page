@@ -1,0 +1,241 @@
+.seccion-6 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url(../images/bg-seccion-6.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.contenedor-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0px;
+}
+
+/* Titulo */
+.contenedor-6 .columns-6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.columns-6 .col-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 130px;
+  width: 50%;
+}
+
+.columns-6 h2 {
+  font-size: 1.9em;
+  padding: 10px 20px 10px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(114, 47, 177, 1) 0%,
+    rgba(41, 10, 77, 1) 100%
+  );
+  border-radius: 100px;
+  margin: 0px;
+}
+.columns-6 span {
+  font-size: 1.8em;
+  font-family: "poppins-semibold";
+  color: #ffd401;
+  margin-top: 5px;
+}
+
+.columns-6 .btn-regular {
+  font-size: 1.5em;
+  margin: auto auto;
+}
+
+.tienda {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+@media (max-width: 720px) {
+  .tienda {
+    flex-direction: column;
+  }
+}
+
+.tienda .producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: rgba(255, 154, 38, 0.27);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border: 1px solid rgba(255, 154, 38, 0.57);
+  padding-bottom: 0.5rem;
+}
+.tienda .producto .img-product {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: calc(250 * 100vw / 1440);
+  height: calc(270 * 100vw / 1440);
+  background-image: url(../images/product-zapatos.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.tienda .producto .img-product img {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.tienda .producto h3 {
+  margin: 10px 0px;
+  font-size: 20px;
+}
+
+.tienda .producto .data-compras {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.tienda .producto .btn-regular {
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+
+.tienda .producto .premio {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+/* Seccion-6 RESPONSIVE */
+/* 900px TITULO*/
+@media screen and (max-width: 900px) {
+  .contenedor-6 h2 {
+    font-size: 1.5em;
+  }
+  .contenedor-6 span {
+    font-size: 1.9em;
+    padding-left: 10px;
+  }
+}
+/* 720px TITULO*/
+@media screen and (max-width: 720px) {
+  .contenedor-6 {
+    width: 100%;
+  }
+  .contenedor-6 h2 {
+    font-size: 24px;
+  }
+  .columns-6 .btn-regular {
+    font-size: 2.5em;
+    margin: auto auto;
+  }
+  .contenedor-6 span {
+    font-size: 2.5em;
+    padding-left: 10px;
+  }
+}
+/* 480px TITULO*/
+@media screen and (max-width: 480px) {
+  .contenedor-6 .columns-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .columns-6 h2 {
+    font-size: 24px;
+    padding: 0px 20px 0px 20px;
+  }
+  .contenedor-6 span {
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  .columns-6 .col-6 {
+    width: 100%;
+    height: auto;
+  }
+  .columns-6 .btn-regular {
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+  }
+}
+
+/* 900px TIENDA*/
+@media screen and (max-width: 900px) {
+  .contenedor-6 {
+    width: 100%;
+  }
+
+  .tienda .producto .img-product {
+    width: 100%;
+  }
+}
+
+/* 720px TIENDA*/
+@media screen and (max-width: 720px) {
+  .tienda .producto .img-product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 160px;
+  }
+  .tienda .producto h3 {
+    font-size: 16px;
+  }
+  .tienda .producto .btn-regular {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
+
+/* 480px TIENDA*/
+@media screen and (max-width: 480px) {
+  .tienda {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 30px;
+    justify-content: left;
+  }
+  .tienda .producto .img-product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 160px;
+  }
+  .tienda .producto h3 {
+    font-size: 16px;
+  }
+  .tienda .producto .btn-regular {
+    font-size: 14px;
+  }
+  .contenedor-6 span {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+}

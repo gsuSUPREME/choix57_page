@@ -1,0 +1,90 @@
+.seccion-2 {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/bg-seccion-2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.contenedor-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 720px;
+    z-index: 5;
+}
+
+.col-s2-a, .col-s2-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+}
+
+.col-s2-b img{
+    width: 70%;
+}
+
+.col-s2-a h2 {
+    font-size: 56px;
+    margin: 0px 0px;
+}
+
+.col-s2-a p {
+    text-align: center;
+}
+
+.col-s2-a .btn-effect-2 {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+/* Seccion-2 RESPONSIVE */
+/* 900px */
+@media screen and (max-width: 900px) {
+    
+    .col-s2-a {
+        width: 60%;
+
+    }
+    .col-s2-b {
+        width: 40%;
+
+    }
+    .cesta-bolas {
+        width: 350px;
+    }
+}
+
+/* 720px */
+@media screen and (max-width: 720px) {
+    .seccion-2 {
+        top: 500px;
+    }
+    .col-s2-a {
+        font-size: 1.8em;
+        width: 100%;
+    }
+    .col-s2-b {
+        display: none;
+    }
+    .col-s2-a h2 {
+        margin-top: 60px;
+    }
+}
+
+/* 360px */
+@media screen and (max-width: 720px) {
+    .seccion-2 {
+        top: 400px;
+    }
+    .col-s2-a h2 {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+}
