@@ -43,6 +43,14 @@
             </div>
         </div>
     </header>
+    <script>
+        const menu = document.getElementsByClassName('right-menu')[0];
+        const button = document.getElementsByClassName("menu-mobile-icon")[0];
+
+        button.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
     
     <main>
         <div class="seccion-1">
